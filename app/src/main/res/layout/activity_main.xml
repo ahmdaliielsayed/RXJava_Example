@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtViewObservableTypes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Observable Types:"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnColdObservable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cold"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/txtViewObservableTypes"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewObservableTypes" />
+
+        <Button
+            android:id="@+id/btnHotConnectableObservable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot Connectable"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/txtViewObservableTypes"
+            app:layout_constraintTop_toTopOf="@+id/btnColdObservable" />
+
+        <Button
+            android:id="@+id/btnPublishSubjectObservable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Publish Subject"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/btnColdObservable"
+            app:layout_constraintTop_toBottomOf="@+id/btnColdObservable" />
+
+        <Button
+            android:id="@+id/btnBehaviorSubjectObservable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Behavior Subject"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnHotConnectableObservable"
+            app:layout_constraintTop_toTopOf="@+id/btnPublishSubjectObservable" />
+
+        <Button
+            android:id="@+id/btnReplaySubjectObservable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Replay Subject"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/btnPublishSubjectObservable"
+            app:layout_constraintTop_toBottomOf="@+id/btnPublishSubjectObservable" />
+
+        <Button
+            android:id="@+id/btnAsyncSubjectObservable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Async Subject"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnBehaviorSubjectObservable"
+            app:layout_constraintTop_toTopOf="@+id/btnReplaySubjectObservable" />
+
+        <TextView
+            android:id="@+id/txtViewFactoryMethods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="Factory Methods(Operators):"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtViewObservableTypes"
+            app:layout_constraintTop_toBottomOf="@+id/btnAsyncSubjectObservable" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Create"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/txtViewFactoryMethods"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewFactoryMethods" />
+
+        <Button
+            android:id="@+id/btnJust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnAsyncSubjectObservable"
+            app:layout_constraintTop_toTopOf="@+id/btnCreate" />
+
+        <Button
+            android:id="@+id/btnFromArray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="From Array"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/btnCreate"
+            app:layout_constraintTop_toBottomOf="@+id/btnCreate" />
+
+        <Button
+            android:id="@+id/btnRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Range"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnJust"
+            app:layout_constraintTop_toTopOf="@+id/btnFromArray" />
+
+        <Button
+            android:id="@+id/btnControlThreading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Control Threading"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/btnFromArray"
+            app:layout_constraintTop_toBottomOf="@+id/btnFromArray" />
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnRange"
+            app:layout_constraintTop_toTopOf="@+id/btnControlThreading" />
+
+        <Button
+            android:id="@+id/btnDebounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Debounce"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/btnControlThreading"
+            app:layout_constraintTop_toBottomOf="@+id/btnControlThreading" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnMap"
+            app:layout_constraintTop_toTopOf="@+id/btnDebounce" />
+
+        <Button
+            android:id="@+id/btnRXJavaRetrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="RXJava with Retrofit"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnFilter"
+            app:layout_constraintStart_toStartOf="@+id/btnDebounce"
+            app:layout_constraintTop_toBottomOf="@+id/btnDebounce" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

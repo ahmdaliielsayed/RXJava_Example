@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rxjavaexample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".retrofit.ui.activities.ManyPostsActivity" />
+        <activity android:name=".operators.FilterActivity" />
+        <activity android:name=".operators.DebounceActivity" />
+        <activity android:name=".operators.MapActivity" />
+        <activity android:name=".operators.ControlThreadingActivity" />
+        <activity android:name=".operators.RangeActivity" />
+        <activity android:name=".operators.FromArrayActivity" />
+        <activity android:name=".operators.JustActivity" />
+        <activity android:name=".operators.CreateActivity" />
+        <activity android:name=".observable.AsyncSubjectObservableActivity" />
+        <activity android:name=".observable.ReplaySubjectObservableActivity" />
+        <activity android:name=".observable.BehaviorSubjectObservableActivity" />
+        <activity android:name=".observable.PublishSubjectObservableActivity" />
+        <activity android:name=".observable.HotConnectableObservableActivity" />
+        <activity android:name=".observable.ColdObservableActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

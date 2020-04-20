@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtViewPostId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="userId:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/txtUserId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtViewPostId"
+            app:layout_constraintTop_toTopOf="@+id/txtViewPostId"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/txtViewId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="id:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="@+id/txtViewPostId"
+            app:layout_constraintTop_toTopOf="@+id/txtId"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="@+id/txtUserId"
+            app:layout_constraintStart_toStartOf="@+id/txtUserId"
+            app:layout_constraintTop_toBottomOf="@+id/txtUserId"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/txtViewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="title:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="@+id/txtViewId"
+            app:layout_constraintTop_toTopOf="@+id/txtTitle"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="@+id/txtId"
+            app:layout_constraintStart_toStartOf="@+id/txtId"
+            app:layout_constraintTop_toBottomOf="@+id/txtId"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/txtViewEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="body:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="@+id/txtViewName"
+            app:layout_constraintTop_toTopOf="@+id/txtBody"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/txtBody"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtTitle"
+            app:layout_constraintStart_toStartOf="@+id/txtTitle"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+            android:layout_gravity="start" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
